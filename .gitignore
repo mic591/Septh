@@ -1,6 +1,13 @@
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
+git rm -r --cached .
+git add .
+git commit -m "Fix .gitignore and remove tracked KiCad files"
+git push
+
+
+
 # Temporary files
 *.000
 *.bak
