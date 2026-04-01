@@ -72,3 +72,12 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
+
+
+bool encoder_user(uint8_t index,bool clockwise){if (clockwise){
+  tap_code(KC_WH_U); //上スクロール
+ }else{
+  tap_code(KC_WH_D); //下スクロール
+ }
+ return false;
+} 

@@ -16,11 +16,12 @@ NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 AUDIO_ENABLE = no           # Audio output
 
+
 # Duplex matrix.
 CUSTOM_MATRIX = lite
 SRC += lib/duplexmatrix/duplexmatrix.c
 
-# Keyball61 is split keyboard.
+# septh is split keyboard.
 SPLIT_KEYBOARD = yes
 
 # Optical sensor driver for trackball.
@@ -28,6 +29,13 @@ POINTING_DEVICE_ENABLE = yes
 POINTING_DEVICE_DRIVER = custom
 SRC += drivers/pmw3360/pmw3360.c
 QUANTUM_LIB_SRC += spi_master.c # Optical sensor use SPI to communicate
+
+#ENCODER
+ENCODER_ENABLE = yes
+
+#VIA
+VIA_ENABLE = yes
+
 
 # This is unnecessary for processing KC_MS_BTN*.
 MOUSEKEY_ENABLE = no

@@ -6,6 +6,13 @@
     },
     "manufacturer": "mic591",
     "keyboard_name": "septh",
+
+"encoder": {
+  "rotary": [
+    { "pin_a": "B3", "pin_b": "B1" }
+  ]
+}
+
     "layouts": {
       "LAYOUT_right_ball": {
         "layout": [
